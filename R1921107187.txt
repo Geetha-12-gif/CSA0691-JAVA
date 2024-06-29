@@ -1,0 +1,14 @@
+import java.util.*;
+class R1921107187
+{
+	public static void main(String args[])
+	{
+		string s="HELLO WORLD";
+		int length=lengthoflastword(s);
+		System.out.println("length of the word"+length);
+	}
+	public string int lengthoflastword(string s)
+		s=s.trim();
+		int lastspace=s.lastspace('')
+		return s.length()-lastspace-1;
+}
