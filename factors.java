@@ -1,15 +1,13 @@
-import java.util.*;
-class factors
-{
-	public static void main(String args[])
-	{
-		int i,n=6;
-		for(i=1;i<=6;i++)
-		{
-			if(n%i==0)
-			{
-				System.out.println(i);
-			}
-		}
-	}
+public class factors {
+
+  public static void main(String[] args) {
+    int number = 60;
+
+    System.out.print("Factors of " + number + " are: ");
+    for (int i = 1; i <= number; ++i) {
+      if (number % i == 0) {
+        System.out.print(i + " ");
+      }
+    }
+  }
 }

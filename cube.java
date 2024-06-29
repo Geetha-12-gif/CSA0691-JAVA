@@ -2,19 +2,21 @@ class cube
 {
 public static void main(String[] args)
 {
- int n=12;
+ int n=27;
+ boolean flag = false;
 int i;
-for(i=0;i<n;i++)
+for(i=0;i*i*i<=n;i++)
 {
-if(i*i*i == n)
+ double cube=Math.pow(i,3);
+if(cube==n)
 {
- System.out.println("true :"+i);
+ System.out.println("true :"+i+",-"+i);
+ flag = true;
+ break;
 }
-else
-{
-System.out.println("false");
-break;
 }
+if(!flag){
+ System.out.println("False");
 }
 }
 }
